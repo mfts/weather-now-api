@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: one
+  observation_time: 2020-01-05 17:43:41
+  temperature_value: 1.5
+  wind_speed: 1.5
+  wind_direction: 1
+  windgust_speed: 1.5
+  relative_humidity: 1
+  pressure: 1
+
+two:
+  location: two
+  observation_time: 2020-01-05 17:43:41
+  temperature_value: 1.5
+  wind_speed: 1.5
+  wind_direction: 1
+  windgust_speed: 1.5
+  relative_humidity: 1
+  pressure: 1

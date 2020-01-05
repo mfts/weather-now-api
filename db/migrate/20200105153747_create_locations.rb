@@ -9,5 +9,6 @@ class CreateLocations < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
+    add_index :locations, :location_key, unique: true
   end
 end

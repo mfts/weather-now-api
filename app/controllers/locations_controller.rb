@@ -1,4 +1,6 @@
 class LocationsController < ApplicationController
+  # Add a before_action to authenticate all requests.
+  before_action :authenticate
   before_action :set_location, only: [:show, :update, :destroy]
 
   # GET /locations

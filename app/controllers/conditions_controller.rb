@@ -1,4 +1,6 @@
 class ConditionsController < ApplicationController
+  # Add a before_action to authenticate all requests.
+  before_action :authenticate
   before_action :set_condition, only: [:show, :update, :destroy]
 
   # GET /conditions

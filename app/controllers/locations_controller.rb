@@ -48,6 +48,6 @@ class LocationsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def location_params
-      params.require(:location).permit(:city, :country, :location_key, :latitude, :longitude, :index, :create, :show)
+      params.require(:location).permit(:city, :country, :location_key, :latitude, :longitude)
     end
 end

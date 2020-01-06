@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_05_162335) do
+ActiveRecord::Schema.define(version: 2020_01_06_150102) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,10 @@ ActiveRecord::Schema.define(version: 2020_01_05_162335) do
     t.string "pressure_unit"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "precipitation_value"
+    t.string "precipitation_value_unit"
+    t.boolean "has_precipitation"
+    t.string "precipitation_type"
     t.index ["location_id"], name: "index_conditions_on_location_id"
   end
 

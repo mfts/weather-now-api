@@ -59,6 +59,10 @@ class ConditionsController < ApplicationController
                                         :relative_humidity,
                                         :relative_humidity_unit,
                                         :pressure,
-                                        :pressure_unit)
+                                        :pressure_unit,
+                                        :precipitation_value,
+                                        :precipitation_value_unit,
+                                        :has_precipitation,
+                                        :precipitation_type,)
     end
 end

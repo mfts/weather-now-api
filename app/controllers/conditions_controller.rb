@@ -48,6 +48,17 @@ class ConditionsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def condition_params
-      params.require(:condition).permit(:location_id, :observation_time, :temperature_value, :wind_speed, :wind_direction, :windgust_speed, :relative_humidity, :pressure)
+      params.require(:condition).permit(:location_id, 
+                                        :observation_time,
+                                        :temperature_value,
+                                        :wind_speed,
+                                        :wind_speed_unit,
+                                        :wind_direction,
+                                        :windgust_speed,
+                                        :windgust_speed_unit,
+                                        :relative_humidity,
+                                        :relative_humidity_unit,
+                                        :pressure,
+                                        :pressure_unit)
     end
 end

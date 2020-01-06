@@ -22,6 +22,10 @@ namespace :conditions do
                      windgust_speed_unit: data["WindGust"]["Speed"]["Metric"]["Unit"], 
                      relative_humidity: data["RelativeHumidity"],
                      pressure: data["Pressure"]["Metric"]["Value"],
-                     pressure_unit: data["Pressure"]["Metric"]["Unit"])
+                     pressure_unit: data["Pressure"]["Metric"]["Unit"],
+                     precipitation_value: data["PrecipitationSummary"]["PastHour"]["Metric"]["Value"],
+                     precipitation_value_unit: data["PrecipitationSummary"]["PastHour"]["Metric"]["Unit"],
+                     has_precipitation: data["HasPrecipitation"],
+                     precipitation_type: data["PrecipitationType"])
   end
 end

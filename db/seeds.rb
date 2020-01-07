@@ -6,5 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(name: 'Marc', email: 'marc@mfts.io')
-Location.create(city: 'Helsinki', country: 'Finland', location_key: 133328)
+User.where(name: 'Marc', email: 'marc@mfts.io').first_or_create
+Location.where(city: 'Helsinki', country: 'Finland', location_key: 133328).first_or_create
+Location.where(city: 'Lappeenranta', country: 'Finland', location_key: 133330).first_or_create
